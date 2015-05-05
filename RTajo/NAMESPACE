@@ -1,0 +1,7 @@
+import("rJava")
+import("RJDBC")
+export("rtajo.query")
+export("rtajo.init")
+export("rtajo.connect")
+export("rtajo.close")
+export("rtajo.showtables")
