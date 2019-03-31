@@ -10,7 +10,7 @@ pipeline {
         }
         stage('fff') {
           steps {
-            sh 'vvmkmkl'
+            sh 'echo "ha"'
           }
         }
       }
