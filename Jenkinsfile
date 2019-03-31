@@ -1,5 +1,10 @@
 pipeline {
-  agent none
+  agent {
+    node {
+      label 'test1'
+    }
+
+  }
   stages {
     stage('rfff') {
       parallel {
@@ -11,6 +16,7 @@ pipeline {
         stage('fff') {
           steps {
             sh 'echo "ha"'
+            sh 'ls'
           }
         }
       }
